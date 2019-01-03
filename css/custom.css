@@ -1,0 +1,379 @@
+/* Your custom css code goes here */
+
+.a,
+.b,
+.c,
+.d {
+  font-family: "Hind",sans-serif;
+  letter-spacing: .10em;
+}
+.border {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+.carousel {
+  width: 100%;
+  font-size: 70px;
+  line-height: 80px;
+}
+.row-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-items: center;
+  align-content: center;
+}
+.about {
+  padding: 2em 1.5em 1em 1.5em;
+}
+.experience {
+  padding: 1.5em 1.5em 3em 1.5em;
+}
+.row-title {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 0 1em;
+}
+figcaption {
+  margin: -15px 0 30px 0;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+  margin-bottom: 50px;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%;
+}
+.item figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .profile {
+  height: auto;
+}
+.item .logo {
+  height: 145px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.pdv-screen {
+  width:360px;
+}
+/* header */
+.header {
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0!important;
+  flex-wrap: wrap;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.probootstrap-slider .social-media {
+  margin: 0.5em 6em;
+}
+.extra-text .social-media {
+  margin: 1em 0;
+}
+.probootstrap-footer-section .social-media {
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+.probootstrap-slider .social-media svg {
+  opacity: 0.6;
+  margin: 0 0.5em;
+  fill: #403d58
+}
+.probootstrap-footer-section .social-media svg,
+.extra-text .social-media svg {
+  margin: 0 0.5em;
+  fill: #ffffff;
+}
+.probootstrap-slider .social-media svg:hover {
+  opacity: 1;
+}
+.probootstrap-footer-section .social-media svg:hover,
+.extra-text .social-media svg:hover {
+  opacity: 0.3;
+}
+/* banner */
+.banner {
+  background-color: #000;
+  opacity:0.5;
+}
+/* Featured work */
+.probootstrap-half #a {
+  background-color:#ed9b40
+}
+.probootstrap-half #b {
+  background-color:#15b097
+}
+.probootstrap-half #c {
+  background-color:#ea526f
+}
+/* overlay */
+.text:hover .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: rgba(45, 114, 143, 0.5);
+}
+.overlay-hover-content {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity:0;
+}
+.text:hover .overlay-hover-content{
+  opacity: 1;
+}
+/* modal */
+.wrapper {
+  display: flex;
+  margin: 0 50px;
+  height: 100vh;
+  overflow-wrap: break-word;
+}
+.mx-auto {
+  margin-left: auto!important;
+  margin-right: auto!important;
+  overflow: auto;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+}
+.modal-content {
+  padding: 0 0 100px 0;
+}
+/* hide scrollbar */
+.portfolio-modal::-webkit-scrollbar,
+.mx-auto::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar {
+	display: none;
+}
+/* close modal */
+.portfolio-modal .close-modal {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 20px;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: .3;
+}
+.portfolio-modal .close-modal .lr {
+  position: relative;
+  z-index: 1051;
+  width: 1px;
+  height: 50px;
+  margin-left: 25px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+.portfolio-modal .close-modal .lr .rl {
+  position: relative;
+  z-index: 1052;
+  width: 1px;
+  height: 50px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #212529;
+}
+/* nav bar */
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* side menu */
+.hamburger {
+  background-color:white;
+  visibility: hidden;
+  font-size: 50px;
+  color: black;
+  padding:20px;
+}
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  padding-right: 50px;
+  transition: all 0.3s;
+  border-right: 1px solid black;
+  overflow: auto;
+}
+.sidebar ul {
+  margin-bottom: 0;
+}
+.sidebar ul li {
+  padding: 0;
+  list-style: none;
+  line-height: 2.2;
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+}
+.probootstrap-main-nav li a,
+.sidebar ul li a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+.sidebar ul li a {
+  color: #999;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.sidebar ul li a.topic {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.sidebar a.topic:before,
+.sidebar a.topic:after {
+  background-color: rgba(21, 176, 151, 0.5);
+}
+.probootstrap-main-nav li a:before,
+.probootstrap-main-nav li a:after,
+.sidebar a:before,
+.sidebar a:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: rgba(234, 82, 111, 0.5);
+}
+.probootstrap-main-nav li a:before,
+.sidebar a:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.probootstrap-main-nav li a:after,
+.sidebar a:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.probootstrap-main-nav a:hover:before,
+.probootstrap-main-nav a:hover:after,
+.probootstrap-main-nav a:focus:before,
+.probootstrap-main-nav a:focus:after,
+.probootstrap-main-nav li.active a:before,
+.probootstrap-main-nav li.active a:after,
+.sidebar a:hover:before,
+.sidebar a:hover:after,
+.sidebar a:focus:before,
+.sidebar a:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
+}
+.probootstrap-main-nav a:hover:before,
+.probootstrap-main-nav a:focus:before,
+.probootstrap-main-nav li.active a:before,
+.sidebar a:hover:before,
+.sidebar a:focus:before {
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s !important;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.probootstrap-main-nav a:hover:after,
+.probootstrap-main-nav a:focus:after,
+.probootstrap-main-nav li.active a:after,
+.sidebar a:hover:after,
+.sidebar a:focus:after {
+  transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s !important;
+  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.g6-prototype {
+  width: 350px; 
+} 
+.g6-prototype .iframe {
+  width: 424px; 
+  height: 916px; 
+  transform: scale(0.8); 
+  transform-origin: 0 0;
+}     
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 50px;
+    margin-left: -250px;
+    border-right: 0;
+  }
+  .sidebar.active {
+    padding: 0;
+    margin-left: 0;
+  }
+  .hamburger {
+    visibility: unset;
+  }
+  .row-title {
+    text-align: center;
+  }
+  .probootstrap-slider .social-media {
+    justify-content: center;
+  }
+  .probootstrap-main-content,
+  .mx-auto {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .pdv-screen {
+    width: 100%;
+    height: auto;
+  }
+  .g6-prototype {
+    width: 230px; 
+  } 
+  .g6-prototype .iframe {
+    transform: scale(0.55);
+  }    
+}
